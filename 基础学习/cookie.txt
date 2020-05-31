@@ -1,0 +1,2 @@
+#LWP-Cookies-2.0
+Set-Cookie3: REMEMBERME="Qml6XFVzZXJcQ3VycmVudFVzZXI6ZFhObGNsOXFjREZpTkhnNU9HVkFaV1IxYzI5b2J5NXVaWFE9OjE1NDk5MzY5MzE6M2Q2ZGZmZmQxZWZiMThlOTkwM2Q3Y2NjMzdhODIwOTE4ODA5NDA0MTU2M2VhMjQ1ZDU3ZmI3MDU2Zjg1Mzc0ZQ%3D%3D"; path="/"; domain="www.taiqischool.com"; path_spec; expires="2019-02-12 02:02:12Z"; httponly=None; version=0
