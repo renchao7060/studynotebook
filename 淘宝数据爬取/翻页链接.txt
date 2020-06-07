@@ -1,0 +1,23 @@
+# 原文链接
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&imgfile=&commend=all
+&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170
+306&bcoffset=1&ntoffset=1&p4ppushleft=2%2C48&s=44
+
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&imgfile=&commend=all
+&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170
+306&bcoffset=-2&ntoffset=-2&p4ppushleft=2%2C48&s=88
+
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&imgfile=&commend=all
+&ssid=s5-e&search_type=item&sourceId=tb.index&spm=a21bo.2017.201856-taobao-item.1&ie=utf8&initiative_id=tbindexz_20170
+306&bcoffset=-5&ntoffset=-5&p4ppushleft=2%2C48&s=132
+
+# 分析参数的不同
+&bcoffset=-5
+&ntoffset=-5
+&s=132
+通过分析可以发现：我们有三个参数不同，经过测试。发现翻页的时候，只是用【&s】参数，即可！
+
+# 简化上述链接：
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&s=44
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&s=88
+https://s.taobao.com/search?q=%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%94%B5%E8%84%91&s=132
