@@ -60,3 +60,16 @@ def digui(num):
     print(num)
 
 digui(3)
+
+def digui2(num):
+    print('*'*num)
+    if num >5:
+        digui2(num+1)
+    print('*'*num)
+
+# digui2(5)
+
+for i in range(1,7):
+    print(i*'*')
+for i in range(7,0,-1):
+    print(i*'*')
