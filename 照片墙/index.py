@@ -34,9 +34,10 @@ h = len(picMatrix)
 
 mw = 100
 
-toImage = Image.new('RGBA', (100 * w, 100 * (h + 4)),color=(108,221,252))
+toImage = Image.new('RGBA', (100 * w, 100 * (h + 4)),color=(252,243,171))
 #color=(252,243,171)
-#color=(222,119,207)
+#color=(222,119,207) 粉紅背景
+#color=(108,221,252) 藍色背景
 def save_photo_wall(noTipImage, imgCount):
     imgIndex = 1
     needImgNum = 0
@@ -45,7 +46,7 @@ def save_photo_wall(noTipImage, imgCount):
             try:
                 if picMatrix[y][x] == 1:
                     needImgNum = needImgNum + 1
-                    fromImage = Image.open(r"./images/%s.jpg" % str(imgIndex % imgCount))
+                    fromImage = Image.open(r"./images4/%s.jpg" % str(imgIndex % imgCount))
                     fromImage = fromImage.resize((100, 100), Image.ANTIALIAS)
                     toImage.paste(fromImage, (x * mw, y * mw))
                     imgIndex = imgIndex + 1
@@ -56,7 +57,7 @@ def save_photo_wall(noTipImage, imgCount):
 
     # 底部加文字图片
     if not noTipImage:
-        tipImage = Image.open(r"./images2/tip.png")
+        tipImage = Image.open(r"./images2/tip1.png")
         tipImage.resize((100 * (w - 2), 100), Image.ANTIALIAS)
         toImage.paste(tipImage, (100, h * mw))
 
@@ -65,7 +66,7 @@ def save_photo_wall(noTipImage, imgCount):
     toImage.show()
 
     # todo sr
-    toImage.save('she.png')
+    toImage.save('she10.png')
 
 if __name__ == '__main__':
     imgCount = 10
