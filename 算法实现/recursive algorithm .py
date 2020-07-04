@@ -14,14 +14,17 @@ def fib(n):
 print(fib(10))
 # 1,1,2,3,5,8,13,21,34,55
 
-def jiecheng(n):
-    if n==0:
+def fact(n):
+    n=int(n)
+    if n <0:
+        print('The data is invalid')
+        return 0
+    elif n==0 or n==1:
         return 1
-    if n==1:
-        return 1
-    if n>1:
-        return n*jiecheng(n-1)
-print(jiecheng(5))
+    else:
+        return n*fact(n-1)
+print(fact(5))
+print('阶乘')
 
 def length(lst):
     if lst[1:]:
@@ -32,21 +35,21 @@ def length(lst):
                 return 1
         except:
                 return 0
-print(length([1,2,3,4,5,6]))
-print(length([1]))
-print(length([]))
+# print(length([1,2,3,4,5,6]))
+# print(length([1]))
+# print(length([]))
 
 import os
-count=0
+# count=0
 def print_file(path):
-    global count
+    # global count
     for child in os.listdir(path):
         new_path=os.path.join(path, child)
         if os.path.isdir(new_path):
             print_file(new_path)
         else:
             print(new_path)
-            count+=1
+            # count+=1
         # print(count)
 
 # currentdir=os.curdir
@@ -54,20 +57,21 @@ def print_file(path):
 # print_file('.')
 # print(count)
 
-def digui(num):
-    print('$'+str(num))
+def symmetry(num):
+    # print('$'+str(num))
+    print(num)
     # 临界值
     if num >0:
         # 这里用的是调用本身的函数(递推关系)
-        digui(num-1)
+        symmetry(num-1)
     else:
-        print('='*20)
+        print('='*10)
     print(num)
 
-digui(3)
-#     digui(2)
-#         digui(1)
-#             digui(0)
+# symmetry(3)
+#     symmetry(2)
+#         symmetry(1)
+#             symmetry(0)
 #             =========
 #             print(0)
 #         print(1)
@@ -80,7 +84,7 @@ def digui2(num,count):
         digui2(num+2,count)
     print('*'*(num-2))
 
-digui2(1,9)
+# digui2(1,9)
 
 
 
@@ -97,7 +101,7 @@ def move1(n,a,b,c):
     move1(n-1,a,c,b)
     move1(1,a,b,c)
     move1(n-1,b,a,c)
-# move1(3,'a','b','c')
+move1(3,'a','b','c')
 
 print('分隔线'.center(20,'-'))
 def move2(n,src,dst,tmp=None):
@@ -117,3 +121,17 @@ def move3(n,src='a',tmp='b',dst='c'):
     move3(1,src,tmp,dst)
     move3(n-1,tmp,src,dst)
 # move3(3)
+
+
+
+class Solution(): 
+    def climbStairs(self,n): 
+        if n ==1: 
+            return 1 
+        elif n==2: 
+            return 2
+        else:
+            return self.climbStairs(n-1) + self.climbStairs(n-2)
+
+frog=Solution()
+print(frog.climbStairs(5))
